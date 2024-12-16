@@ -9,7 +9,9 @@
   /////////////////////// */
 
 body {
-  font-family: var(--ff-body);
+  margin: 1;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
   font-size: var(--fs-400);
   color: var(--clr-neutral-900);
 }
@@ -83,7 +85,12 @@ section,
   /////////////////////// */
 
 .page-header {
-  padding: 2em 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-neutral-100);
 }
 
 .page-header__content {
@@ -92,13 +99,27 @@ section,
 }
 
 .nav-list {
+  display: flex;
+  gap: 2em;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-list a {
   color: var(--clr-neutral-900);
   text-decoration: none;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-400);
+  transition: color 0.3s ease;
 }
 
 .nav-list a:focus,
@@ -132,6 +153,17 @@ header,
   flex-shrink: 0;
 }
 
+/* Logo */
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 64px; 
+  height: auto;
+}
+
+
 .site-footer {
   --logo-color: currentColor;
   padding: 2em 0;
@@ -164,13 +196,18 @@ header,
   }
 }
 
-.featured-articles {
+.featured-pets {
   background-color: var(--clr-primary-100);
+  display: flex;
+  flex: wrap;
+  gap: 2em;
 }
 
 .articles__list {
   --flow-spacer: 3rem;
   margin: 6rem 0;
+  flex: 1 1 30%;
+  list-style: none;
 }
 
 /* //////////////////////

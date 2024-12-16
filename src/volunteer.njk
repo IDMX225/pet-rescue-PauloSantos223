@@ -1,0 +1,28 @@
+---
+title: "Volunteer Recruitment"
+layout: 'base.njk'
+---
+
+<section class="volunteer-recruitment">
+  <div class="container">
+    <h1 class="section-title">Volunteer Recruitment</h1>
+    <p>We are always looking for dedicated volunteers to help us care for and rehome our pets. If you are passionate about animals, consider joining us!</p>
+    <p>Fill out the form below to apply to volunteer with us:</p>
+    
+    <form action="/submit-volunteer-application" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="experience">Previous Experience</label>
+      <textarea id="experience" name="experience" rows="4"></textarea>
+
+      <label for="availability">Availability</label>
+      <textarea id="availability" name="availability" rows="4" required></textarea>
+
+      <button type="submit" class="btn btn--primary">Submit Application</button>
+    </form>
+  </div>
+</section>
